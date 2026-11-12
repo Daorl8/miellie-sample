@@ -83,11 +83,14 @@ h1,h2,h3,p,dl,dd{ margin:0; }
 .brand{ font-family:var(--serif); font-weight:500; font-size:1.18rem; letter-spacing:.24em; line-height:1; }
 .nav{ display:none; gap:30px; font-size:.92rem; color:var(--soft); }
 .head-cta{ min-height:40px; padding:0 18px; font-size:.84rem; }
+.head-right{ display:flex; align-items:center; gap:20px; }
+.head-ig{ font-family:var(--serif); font-style:italic; font-weight:500; font-size:1.05rem; }
+@media (hover:hover){ .head-ig:hover{ color:var(--rose); } }
 @media (max-width:899px){ .head-cta{ display:none; } }
 @media (min-width:900px){
   .site-head .wrap{ display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); }
   .nav{ display:flex; }
-  .head-cta{ justify-self:end; }
+  .head-right{ justify-self:end; }
 }
 @media (hover:hover){ .nav a:hover{ color:var(--ink); } }
 
@@ -194,7 +197,10 @@ h1,h2,h3,p,dl,dd{ margin:0; }
   <div class="wrap">
     <a class="brand" href="#top" aria-label="미엘리 왁싱 처음으로">MIELLIE WAXING</a>
     <nav class="nav" aria-label="주요 메뉴"><a href="#promise">약속</a><a href="#care">케어</a><a href="#price">가격</a><a href="#space">공간</a><a href="#visit">오시는 길</a></nav>
-    <a class="btn fill head-cta" href="https://m.place.naver.com/place/2058557661/home" target="_blank" rel="noopener">네이버 예약</a>
+    <div class="head-right">
+      <a class="head-ig" href="https://www.instagram.com/miellie_waxing/" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn fill head-cta" href="https://m.place.naver.com/place/2058557661/home" target="_blank" rel="noopener">네이버 예약</a>
+    </div>
   </div>
 </header>
 
@@ -340,10 +346,11 @@ h1,h2,h3,p,dl,dd{ margin:0; }
           <div><dt>찾는 법</dt><dd>언주역 2번 출구에서 190m 올라오셔서 충현동물병원을 지나, 엑스게임 · 텍사스바베큐 건물 지하1층이에요.</dd></div>
           <div><dt>주차</dt><dd><p class="row"><b>무료</b> 미엘리 지하주차장, 미엘리 후문 앞 가장 왼쪽 자리<small>차 3대 대는 자리라 왼쪽으로 붙여 주세요. 입구 턱이 높아 차체가 낮은 차는 주변 유료 주차장을 이용해 주세요.</small></p><p class="row"><b>유료</b> 대승민영주차장, 논현동 192-9 (도보 3분)<small>30분 3,000원</small></p></dd></div>
           <div><dt>영업시간</dt><dd><span class="hours"><span>월~토</span><span>11:00 ~ 21:00</span><span>일</span><span>정기휴무</span></span></dd></div>
-          <div><dt>예약 · 문의</dt><dd>네이버 예약 · 톡톡으로 남겨 주시면 순서대로 확인해요.<small>시술 중에는 통화가 어려워요. 문자 <a href="sms:01073215523">010-7321-5523</a> 주시면 감사해요. 전화 <a href="tel:050714275523">0507-1427-5523</a></small></dd></div>
+          <div><dt>예약 · 문의</dt><dd>네이버 예약 · 톡톡이나 카카오톡으로 남겨 주시면 순서대로 확인해요.<small>시술 중에는 통화가 어려워요. 문자 <a href="sms:01073215523">010-7321-5523</a> 주시면 감사해요. 전화 <a href="tel:050714275523">0507-1427-5523</a></small></dd></div>
         </dl>
         <div class="cta">
           <a class="btn fill" href="https://m.place.naver.com/place/2058557661/home" target="_blank" rel="noopener">네이버 예약</a>
+          <a class="btn" href="https://pf.kakao.com/_BEnXn" target="_blank" rel="noopener">카카오톡 문의</a>
           <a class="btn" href="https://map.naver.com/p/entry/place/2058557661" target="_blank" rel="noopener">네이버 길찾기</a>
           <a class="btn" href="https://www.instagram.com/miellie_waxing/" target="_blank" rel="noopener">인스타그램</a>
         </div>
